@@ -1,0 +1,25 @@
+﻿TO DO : nebutinas antras paketas, tiesio po sito bus patikrinama atitinkamas sekantis zinutes elementas
+
+Monopolio protokolas
+	Server -> Client ( Po tam tikru sisteminiu(int) pranesimu seks sekantis su atitinkama informacija) :
+		0 - players update about their dice values and position
+		1 - players money update ( po sito antras paketas su pinigu likuciu)
+		2 - players update about their property (po sito paketo seks paketas su gatviu numeriais (array), kuris bus uzbaiktas numeriu "0")
+		3 - players update about other players position (po sito antras paketas su kito zaidejo pozicija)
+		4 - your turn (atsakymo laukiama 1min, jei ne, zaidejui skiriama bauda, po 3 baudu jis automatiskai pralaimi zaidima)(Po sito paketo, praejus 45s bus siunciamas perspejimas, o praejus 1min ejimo nutraukimo paketas)
+		5 - turn ending msg
+		6 - ask if player wants to buy property (po sito paketo bus siunciamas laukelio numeris ir kaina)
+		7 - ask if player wants to buy out of prison
+		8 - player failed to buy property or pay his debts
+		9 - ask if player want to trade in his property
+		10 - inform player about his chance and community cards (sekantis paketas bus string tipo su zinute)
+		11 - game ending message (sekantis paketas nurodo kuris zaidejas laimejo o kuris pralaimejo)
+		12 - other players chat message (sekantis paketas bus string tipo su info)
+	Client -> Server
+		0 - player wants to roll the dice 
+		1 - player agree to buy property (po sito bus siunciamas gatves id)
+		2 - player wants to trade in his property (po sito sekas array su gatviu id, kuris uzbaigiamas 0)
+		3 - player want to buy back his property (po sito sekas array su gatviu id, kuris uzbaigiamas 0)
+		4 - player want to surrender
+		5 - players chat message (sekantis paketas bus string tipo su info)
+		
