@@ -5,11 +5,11 @@ using System.Text;
 
 namespace Monopoly_server
 {
-    class Bank: Entity
+    class Free: Field
     {
-        public override void changeMoney(int value)
+        public override int work(Player player)
         {
-            this.money += value;
+            return 0;
         }
     }
 }

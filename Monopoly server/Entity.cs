@@ -7,9 +7,9 @@ namespace Monopoly_server
 {
     abstract class Entity
     {
-        private int id;
-        private int money;
-        private int[] property;
+        public int id;
+        public int money;
+        public int[] property;
 
         public abstract void changeMoney(int value);
     }

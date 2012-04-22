@@ -5,17 +5,17 @@ using System.Text;
 
 namespace Monopoly_server
 {
-    public class Player: Entity
+    class Player: Entity
     {
-        private int id;
-        private int money;
-        private int[] property;
-        private int in_jail;
-        Random dice_value = new Random();
+        public int in_jail;
+        public int position = 0;
+        public int last_roll = 0;
+
+        private Random dice_value = new Random();
 
         public int rollDice ()
         {
-            return dice_value.Next(11) + 2;
+            return dice_value.Next(6) + 1;
         }
 
         public override void changeMoney(int value)

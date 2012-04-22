@@ -10,6 +10,7 @@ namespace Monopoly_server
     {
         static void Main(string[] args)
         {
+            
             ConfigFile configFile = new ConfigFile("../../config/Game.ini");
             //Console.WriteLine(configFile.SettingGroups["street19"].Settings["name"].GetValueAsString());
             foreach (KeyValuePair<string, SettingsGroup> group in configFile.SettingGroups)
