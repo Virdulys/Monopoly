@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Monopoly_server
 {
-    class Player
+    public class Player: Entity
     {
         private int id;
         private int money;
