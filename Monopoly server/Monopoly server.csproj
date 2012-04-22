@@ -51,7 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="config\Chance.ini" />
-    <None Include="config\Community Chest.ini" />
+    <None Include="config\Community.ini" />
     <None Include="config\Game.ini" />
     <None Include="config\map.ini" />
   </ItemGroup>
