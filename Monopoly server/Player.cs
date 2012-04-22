@@ -11,15 +11,16 @@ namespace Monopoly_server
         private int money;
         private int[] property;
         private int in_jail;
+        Random dice_value = new Random();
 
         public int rollDice ()
         {
-            throw new NotImplementedException();
+            return dice_value.Next(11) + 2;
         }
 
         public override void changeMoney(int value)
         {
-            throw new NotImplementedException();
+            this.money += value;
         }
     }
 }
