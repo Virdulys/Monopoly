@@ -13,7 +13,7 @@ namespace Monopoly_server
 
         public override void changeMoney(int value)
         {
-            throw new NotImplementedException();
+            this.money += value;
         }
     }
 }
